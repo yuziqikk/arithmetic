@@ -37,6 +37,7 @@ public class Bellmen_Ford {
                 int a = g[j][0];
                 int b = g[j][1];
                 int w = g[j][2];
+                //松弛操作
                 dist[b] = Math.min(dist[b], backup[a] + w);
             }
         }
